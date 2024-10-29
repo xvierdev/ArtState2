@@ -1,0 +1,5 @@
+/* Personalização do estilo do boostrap */
+img{
+    /* width: 200px; */
+    height: 30vw;
+    object-fit: cover;
