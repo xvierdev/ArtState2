@@ -7,23 +7,51 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <title>Cursos de Informática</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
 <body>
+    <!-- Header page -->
     <header class="container-fluid text-center p-3">
-        <h1>TITULO PRINCIPAL</h1>
+        <h1 class="logo display-3">Aletheia Informática</h1>
+        <p class="fw-bold sublogo">Informática - Design - Games</p>
     </header>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navigation Bar</a>
+            <a class="navbar-brand logo" href="#">Aletheia Informática</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Sobre</a>
+                    </li>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cursos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#infocourse">Pacote Office</a></li>
+                            <li><a class="dropdown-item" href="#designcourse">Pacote Adobe</a></li>
+                            <li><a class="dropdown-item" href="#freecourse">Cursos Livres</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main>
-
+    <!-- Contents -->
+    <main class="container-fluid">
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -38,7 +66,7 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/office.pack.webp" alt="Pacote Office" class="d-block w-100">
+                    <img src="./img/office.pack.webp" alt="Pacote Office" class="d-block w-100 img">
                 </div>
                 <div class="carousel-item">
                     <img src="./img/adobe.pack.jpg" alt="Pacote Adobe" class="d-block w-100">
@@ -60,16 +88,89 @@
             </button>
         </div>
 
+        <!--  Courses -->
         <section clas="container-fluid">
-            <h1>Cursos de Informática</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci excepturi cum labore dolor sequi alias asperiores vitae dolores quasi? Dignissimos inventore ullam praesentium nisi, ipsum excepturi qui provident sit!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci excepturi cum labore dolor sequi alias asperiores vitae dolores quasi? Dignissimos inventore ullam praesentium nisi, ipsum excepturi qui provident sit!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci excepturi cum labore dolor sequi alias asperiores vitae dolores quasi? Dignissimos inventore ullam praesentium nisi, ipsum excepturi qui provident sit!</p>
+            <!-- Promotion banner -->
+            <div class="alert alert-success alert-dismissible m-3">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Desconto de 20% - Somente Hoje</strong> Promoção válida para os cursos de informática e cursos livres.
+            </div>
+            <section class="row">
+                <div class="col-sm-8">
+                    <h1 id="infocourse">Cursos de Informática</h1>
+                    <p>O curso de informática voltado ao mercado corporativo conta com uma formação sólida dos alunos nos softwaes essenciais como:</p>
+                    <ul>
+                        <li>Microsoft Windows 11 - Uso e configurações</li>
+                        <li>Microsoft Office 365 - Softwares de uso corporativo</li>
+                        <li>Internet - Como usar os serivços digitais de forma proeficiente e ágil</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#moreinfo1">Mais informações</button>
+                    <div id="moreinfo1" class="collapse">
+                        <em>Esse curso tem como propósito geral formar o aluno nas habiliades corporativas do uso da informática, para cursos com foco home consulte os cursos livres.</em>
+                    </div>
+                </div>
+                <figure class="col-sm-4">
+                    <img src="./img/info.jpeg" class="img-fluid">
+                </figure>
+            </section>
+            <section class="row">
+                <figure class="col-sm-4">
+                    <img src="./img/design.thinking.jpg" class="img-fluid">
+                </figure>
+                <div class="col-sm-8">
+                    <h1 id="designcourse">Curso de Design</h1>
+                    <p>O curso de design voltado ao mercado de comunicação visual visa atender a demanda crescente do mercado por profissionais qualificados, tanto na produção de mídias digitais quanto físicas, nosso curso conta com a sólida formação em:</p>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe InDesign</li>
+                        <li>Adobe Animate</li>
+                    </ul>
+                    <p>Após o término dos módulos o aluno pode ingressar nos cursos específicos como:</p>
+                    <ul>
+                        <li>CorelDraw</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe After Effects</li>
+                        <li>Autodesk AutoCAD</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-sm-8">
+                    <h1 id="freecourse">Cursos Livres</h1>
+                    <p>Oferecemos treinamento específico em diversas áreas para os alunos que desejam se masterizar em alguma software em especial, cofira nosso catálogo:</p>
+                    <ul>
+                        <li>Pacato Office</li>
+                        <li>Illustração digital com Illustrator</li>
+                        <li>Edição de fotos com Photoshop</li>
+                        <li>Animação digital com Animate</li>
+                        <li>Modelagem 3D com Blender</li>
+                        <li>Desenho arquitetônico com AutoCAD</li>
+                        <li>Introdução à programação com Scratch</li>
+                        <li>Navegação segura na internet</li>
+                    </ul>
+                </div>
+                <figure class="col-sm-4">
+                    <img src="img/game.design.jpg" class="img-fluid">
+                </figure>
+            </section>
+            
         </section>
     </main>
     
-    <footer class="fixed-bottom text-center">
-        <p>Rodapé da página</p>        
+    <!-- Footer of page -->
+    <footer class="container-fluid text-center row align-items-center border-top">
+        <div class="col-8">
+            <p class="display-4 logo">Aletheia Informática</p>
+        </div>
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action border-0"><a href="./about.html">Sobre</a></li>
+                <li class="list-group-item list-group-item-action border-0"><a href="./contact.html">Contato</a></li>
+                <li class="list-group-item list-group-item-action border-0"><a href="https://github.com/xvierdev/ArtState2">Github</a></li>
+                <li class="list-group-item list-group-item-action border-0"><a href="https://www.linkedin.com/in/xvierbr/">Linkedin</a></li>
+            </ul>
+        </div>
     </footer>
     
     <!-- Latest compiled JavaScript -->

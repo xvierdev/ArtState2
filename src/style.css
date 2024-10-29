@@ -1,5 +1,14 @@
 /* Personalização do estilo do boostrap */
 img{
-    /* width: 200px; */
-    height: 30vw;
+    height: 20vw;
     object-fit: cover;
+}
+.logo{
+    color:gold;
+    font-family: "Sofia", sans-serif;
+}
+.sublogo{
+    color:orangered;
+    font-family: "Sofia", sans-serif;
+    font-style: italic;
+}
